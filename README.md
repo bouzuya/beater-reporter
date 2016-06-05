@@ -13,7 +13,7 @@ $ npm install beater-reporter
 ## Usage
 
 ```js
-$ eater --reporter beater-reporter
+$ beater --reporter beater-reporter
 ```
 
 or
