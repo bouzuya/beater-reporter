@@ -6,6 +6,14 @@ default [beater][bouzuya/beater] reporter.
 
 ## Installation
 
+### for `beater@0.3.0`
+
+```
+$ npm install beater-reporter@0.1.0
+```
+
+### for `beater@0.4.x`
+
 ```
 $ npm install beater-reporter
 ```
