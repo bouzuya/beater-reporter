@@ -30,8 +30,6 @@ export default function(): Reporter {
 
 ## Badges
 
-## Badges
-
 [![npm version][npm-badge-url]][npm-url]
 [![Circle CI][circleci-badge-url]][circleci-url]
 
