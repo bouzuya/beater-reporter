@@ -30,7 +30,15 @@ export default function(): Reporter {
 
 ## Badges
 
+## Badges
+
+[![npm version][npm-badge-url]][npm-url]
 [![Circle CI][circleci-badge-url]][circleci-url]
+
+[npm-badge-url]: https://badge.fury.io/js/beater-reporter.svg
+[npm-url]: https://www.npmjs.com/package/beater-reporter
+[circleci-badge-url]: https://circleci.com/gh/bouzuya/beater-reporter.svg?style=svg
+[circleci-url]: https://circleci.com/gh/bouzuya/beater-reporter
 
 ## License
 
@@ -43,5 +51,3 @@ export default function(): Reporter {
 [user]: https://github.com/bouzuya
 [email]: mailto:m@bouzuya.net
 [url]: http://bouzuya.net
-[circleci-badge-url]: https://circleci.com/gh/bouzuya/beater-reporter.svg?style=svg
-[circleci-url]: https://circleci.com/gh/bouzuya/beater-reporter
