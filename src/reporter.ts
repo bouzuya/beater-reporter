@@ -1,8 +1,9 @@
+import { Test } from './test';
+import { TestResult } from './test-result';
+
 export interface Reporter {
-  finished(files: string[], errors: { [file: string]: Error[]; }): void;
-  started(files: string[]): void;
-  fileFinished(file: string, errors: Error[]): void;
-  fileStarted(file: string): void;
-  testFinished(file: string, test: string, error?: Error): void;
-  testStarted(file: string, test: string): void;
+  started(): void;
+  finished(results: TestResult[]): void;
+  testStarted(test: Test): void;
+  testFinished(result: TestResult): void;
 }
