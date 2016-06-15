@@ -2,6 +2,8 @@
 
 [beater][bouzuya/beater] reporter interface.
 
+See: [bouzuya/beater][] README.
+
 Note: `beater-reporter@<=0.2` is beater default reporter implementation (is not interface). [bouzuya/beater-cli][] default reporter moved into [bouzuya/beater-cli-reporter][].
 
 [bouzuya/beater]: https://github.com/bouzuya/beater
