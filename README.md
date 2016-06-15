@@ -1,18 +1,14 @@
 # beater-reporter
 
-default [beater][bouzuya/beater] reporter.
+[beater][bouzuya/beater] reporter interface.
+
+Note: `beater-reporter@<=0.2` is beater default reporter implementation (is not interface). [bouzuya/beater-cli][] default reporter moved into [bouzuya/beater-cli-reporter][].
 
 [bouzuya/beater]: https://github.com/bouzuya/beater
+[bouzuya/beater-cli]: https://github.com/bouzuya/beater-cli
+[bouzuya/beater-cli-reporter]: https://github.com/bouzuya/beater-cli-reporter
 
 ## Installation
-
-### for `beater@0.3.0`
-
-```
-$ npm install beater-reporter@0.1.0
-```
-
-### for `beater@0.4.x`
 
 ```
 $ npm install beater-reporter
@@ -20,19 +16,15 @@ $ npm install beater-reporter
 
 ## Usage
 
-```js
-$ beater --reporter beater-reporter
-```
+```ts
+import { Reporter } from 'beater-reporter';
 
-or
+class YourReporter implements Reporter {
+  /* ... */
+}
 
-`package.json`
-
-```js
-{
-  "beater": {
-    "reporter": "beater-reporter"
-  }
+export default function(): Reporter {
+  return new YourReporter();
 }
 ```
 
