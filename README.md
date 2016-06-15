@@ -1,4 +1,4 @@
-# beater-reporter-default
+# beater-reporter
 
 default [beater][bouzuya/beater] reporter.
 
