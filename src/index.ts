@@ -35,7 +35,8 @@ export default class Reporter implements IReporter {
     // do nothing
   }
 
-  testFinished(_: TestResult): void {
-    // do nothing
+  testFinished(result: TestResult): void {
+    if (!!result.error) return;
+    console.log(`${green('✓ success: ')}${result.test.name}`);
   }
 }
