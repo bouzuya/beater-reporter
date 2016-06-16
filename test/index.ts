@@ -1,6 +1,8 @@
 import assert from 'power-assert';
-import { test } from 'beater';
+import beater from 'beater';
 import { Error, Message, Reporter, Test, TestResult } from '../src/';
+
+const { test } = beater();
 
 test('Reporter', () => {
   class MyReporter implements Reporter {
