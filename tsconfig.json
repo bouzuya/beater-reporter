@@ -3,17 +3,21 @@
     "declaration": true,
     "module": "commonjs",
     "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "outDir": ".tmp",
     "removeComments": true,
     "rootDir": ".",
     "sourceMap": false,
+    "strictNullChecks": true,
     "target": "es2015"
   },
   "files": [
     "./src/index.ts",
-    "./test/index.ts",
-    "./typings/index.d.ts"
+    "./test/index.ts"
   ]
 }

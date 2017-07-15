@@ -1,15 +1,35 @@
-import * as assert from 'power-assert';
-import beater from 'beater';
-import { Error, Message, Reporter, Test, TestResult } from '../src/';
+import * as assert from 'assert';
+import {
+  Error,
+  Test,
+  TestFn,
+  TestMeta,
+  TestReporter,
+  TestResult
+} from '../src';
 
-const { test } = beater();
+const reporter: TestReporter = {
+  finished(_: TestResult[]): void {
+    // ...
+  },
 
-test('Reporter', () => {
-  class MyReporter implements Reporter {
-    started(): void { }
-    finished(results: TestResult[]): void { }
-    testStarted(test: Test): void { }
-    testFinished(result: TestResult): void { }
+  started(_: Test[]): void {
+    // ...
+  },
+
+  testFinished(result: TestResult): void {
+    if (typeof result.error !== 'undefined') {
+      const e: Error = result.error;
+      assert(e);
+    }
+  },
+
+  testStarted(test: Test): void {
+    const fn: TestFn = test.fn;
+    const meta: TestMeta = test.meta;
+    assert(fn);
+    assert(meta);
   }
-  assert(MyReporter);
-});
+}
+
+assert(reporter);

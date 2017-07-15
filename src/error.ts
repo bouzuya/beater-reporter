@@ -1,4 +1,5 @@
 export interface Error {
-  name: string;
   message: string;
+  name: string;
+  stack: string;
 }

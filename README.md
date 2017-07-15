@@ -4,7 +4,11 @@
 
 See: [bouzuya/beater][] README.
 
-Note: `beater-reporter@<=0.2` is beater default reporter implementation (is not interface). [bouzuya/beater-cli][] default reporter moved into [bouzuya/beater-cli-reporter][].
+Note:
+
+- `beater-reporter@<=0.4` ... `beater@<=5.x`
+- `beater-reporter@<=0.3` ... `beater@<=0.4.x`
+- `beater-reporter@<=0.2` is beater default reporter implementation (is not interface). [bouzuya/beater-cli][] default reporter moved into [bouzuya/beater-cli-reporter][].
 
 [bouzuya/beater]: https://github.com/bouzuya/beater
 [bouzuya/beater-cli]: https://github.com/bouzuya/beater-cli
@@ -19,15 +23,16 @@ $ npm install beater-reporter
 ## Usage
 
 ```ts
-import { Reporter } from 'beater-reporter';
+// index.ts
+import { runWithOptions } from 'beater'; // beater v5.x
+import { TestReporter } from 'beater-reporter';
 
-class YourReporter implements Reporter {
+const reporter: TestReporter = () => {
   /* ... */
-}
+};
 
-export default function(): Reporter {
-  return new YourReporter();
-}
+const test1 = test(/* ... */);
+runWithOptions({ reporter: reporter() })([test1]).catch(() => process.exit(1));
 ```
 
 ## Badges

@@ -1,3 +1,7 @@
+import { TestFn } from './test-fn';
+import { TestMeta } from './test-meta';
+
 export interface Test {
-  name: string;
+  fn: TestFn;
+  meta: TestMeta;
 }
