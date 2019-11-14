@@ -37,13 +37,13 @@ runWithOptions({ reporter: reporter() })([test1]).catch(() => process.exit(1));
 
 ## Badges
 
-[![npm version][npm-badge-url]][npm-url]
-[![Circle CI][circleci-badge-url]][circleci-url]
+[![NPM][npm-badge-url]][npm-url]
+[![Travis CI][travis-ci-badge-url]][travis-ci-url]
 
-[npm-badge-url]: https://badge.fury.io/js/beater-reporter.svg
+[npm-badge-url]: https://img.shields.io/npm/v/beater-reporter
 [npm-url]: https://www.npmjs.com/package/beater-reporter
-[circleci-badge-url]: https://circleci.com/gh/bouzuya/beater-reporter.svg?style=svg
-[circleci-url]: https://circleci.com/gh/bouzuya/beater-reporter
+[travis-ci-badge-url]: https://img.shields.io/travis/bouzuya/beater-reporter
+[travis-ci-url]: https://travis-ci.org/bouzuya/beater-reporter
 
 ## License
 
