@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "declaration": true,
+    "esModuleInterop": true,
     "module": "commonjs",
     "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
@@ -13,7 +15,7 @@
     "removeComments": true,
     "rootDir": ".",
     "sourceMap": false,
-    "strictNullChecks": true,
+    "strict": true,
     "target": "es2015"
   },
   "files": [
