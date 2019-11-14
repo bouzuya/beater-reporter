@@ -39,7 +39,7 @@
     "build:lib": "babel --copy-files --no-comments --out-dir lib .tmp/src",
     "build:tmp:ts": "tsc",
     "clean": "rimraf \".tmp\" \"lib\"",
-    "prepublish": "npm-run-all \"clean\" \"build\"",
+    "prepare": "npm-run-all \"clean\" \"build\"",
     "test": "exit 0",
     "watch": "npm-run-all \"watch:**\"",
     "watch:lib": "watch --wait 2 \"npm run build:lib\" \".tmp/src/\"",
