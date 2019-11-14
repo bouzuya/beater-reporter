@@ -11,8 +11,9 @@
     "url": "https://github.com/bouzuya/beater-reporter/issues"
   },
   "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
     "@types/node": "^12.12.7",
-    "cpx": "^1.5.0",
     "npm-run-all": "^4.0.2",
     "rimraf": "^3.0.0",
     "typescript": "^3.7.2",
@@ -35,7 +36,7 @@
   },
   "scripts": {
     "build": "npm-run-all -s \"build:tmp:ts\" \"build:lib\"",
-    "build:lib": "cpx \".tmp/src/*.d.ts\" \"lib\"",
+    "build:lib": "babel --copy-files --no-comments --out-dir lib .tmp/src",
     "build:tmp:ts": "tsc",
     "clean": "rimraf \".tmp\" \"lib\"",
     "prepublish": "npm-run-all \"clean\" \"build\"",
