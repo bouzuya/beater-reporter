@@ -1,6 +1,6 @@
 {
   "name": "beater-reporter",
-  "description": "beater reporter interface",
+  "description": "beater reporter interface for TypeScript",
   "version": "1.0.0",
   "author": {
     "name": "bouzuya",

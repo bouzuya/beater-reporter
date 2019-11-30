@@ -1,11 +1,12 @@
 # beater-reporter
 
-[beater][bouzuya/beater] reporter interface.
+[beater][bouzuya/beater] reporter interface for TypeScript.
 
 See: [bouzuya/beater][] README.
 
 Note:
 
+- `beater-reporter@<=1.0` ... `beater@<=7.x`
 - `beater-reporter@<=0.4` ... `beater@<=5.x`
 - `beater-reporter@<=0.3` ... `beater@<=0.4.x`
 - `beater-reporter@<=0.2` is beater default reporter implementation (is not interface). [bouzuya/beater-cli][] default reporter moved into [bouzuya/beater-cli-reporter][].
@@ -17,7 +18,7 @@ Note:
 ## Installation
 
 ```
-$ npm install beater-reporter
+$ npm install --save-dev beater-reporter
 ```
 
 ## Usage
