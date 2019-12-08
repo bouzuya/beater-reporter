@@ -1,7 +1,3 @@
-import { TestFn } from './test-fn';
-import { TestMeta } from './test-meta';
+type Test = Function;
 
-export interface Test {
-  fn: TestFn;
-  meta: TestMeta;
-}
+export { Test };

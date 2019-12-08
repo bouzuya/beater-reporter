@@ -1,7 +1,9 @@
 import { Error } from './error';
 import { Test } from './test';
 
-export interface TestResult {
+interface TestResult {
   test: Test;
   error?: Error;
 }
+
+export { TestResult };
