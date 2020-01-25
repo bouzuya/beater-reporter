@@ -1,10 +1,5 @@
 import assert from 'assert';
-import {
-  Error,
-  Test,
-  TestReporter,
-  TestResult
-} from '../src';
+import { Error, Test, TestReporter, TestResult } from '../src';
 
 const reporter: TestReporter = {
   finished(_: TestResult[]): void {
@@ -31,6 +26,6 @@ const reporter: TestReporter = {
     assert(typeof test === 'function');
     assert(typeof test.name === 'string');
   }
-}
+};
 
 assert(reporter);
