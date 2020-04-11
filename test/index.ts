@@ -25,7 +25,7 @@ const reporter: TestReporter = {
   testStarted(test: Test): void {
     assert(typeof test === "function");
     assert(typeof test.name === "string");
-  }
+  },
 };
 
 assert(reporter);
