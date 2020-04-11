@@ -13,6 +13,9 @@ update_configs:
       - match:
           dependency_name: 'eslint*'
           update_type: 'semver:minor'
+      - match:
+          dependency_name: 'prettier'
+          update_type: 'all'
     ignored_updates:
       - match:
           dependency_name: "@types/node"
